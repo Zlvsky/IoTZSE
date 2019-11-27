@@ -10,10 +10,10 @@
     TRIG.off()
     ECHO = machine.Pin(5, machine.Pin.IN)
     while ECHO.value() == 0:
-        continue
+        pass
     t1 = utime.ticks_us()
     while ECHO.value() == 1:
-        continue
+        pass
     t2 = utime.ticks_us()
     cm = (t2 - t1) / 58.0
     print(cm)
