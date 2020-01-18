@@ -1,6 +1,7 @@
 # IoTZSE
 main.py to aktualny plik
-oldmain.py to plik który wysłałem Panu za pierwszym razem na librusa
+
+stare.py to plik który wysłałem Panu za pierwszym razem na librusa
 
 
 W tym kodzie głównie korzystałem z dokumentacji micropythona
