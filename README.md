@@ -13,15 +13,15 @@ po linii 18(while ECHO.value() == 0) pojawia się błąd, probowalem roznych roz
 Teoretycznie można użyć biblioteki https://github.com/rsc1975/micropython-hcsr04
 wtedy kod od 11 do 26 linijki zastąpić:
 
-import time
-import machine
-import utime
-from hcsr04 import HCSR04
-
-
-while True:
-    sensor = HCSR04(trigger_pin=4, echo_pin=5, echo_timeout_us=1000000)
-    distance = sensor.distance_cm()
-    print('Distance:', distance, 'cm')
+    import time
+    import machine
+    import utime
+    from hcsr04 import HCSR04
+    
+    while True:
+        sensor = HCSR04(trigger_pin=4, echo_pin=5, echo_timeout_us=1000000)
+        distance = sensor.distance_cm()
+        print('Distance:', distance, 'cm')
+    
 
 jednak kod powyżej zwraca wartość około -0.306... za każdym razem, niezależnie od tego czy obiekt jest oddalony o kilka centymetrów, metr czy obojętnie jaki dystans
